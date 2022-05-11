@@ -27,6 +27,14 @@ p{
     
     
 }
+.input-value{
+    max-width: 100px;
+    
+   border:none;
+    
+    background: transparent;  
+    font-size: 50px;  
+}
 .main p{
     font-size: 100px;
    

@@ -1,13 +1,11 @@
-function convert(){
-    var name = prompt()
-
-document.getElementsByTagName('p')[0].textContent = name
-calculate()
-}
-function calculate(){
 
 
-const val = document.getElementsByTagName('p')[0].innerText
+
+function myFunction(event) {
+    document.getElementById("myInput").textContent = event.data;
+  }
+
+const val = document.getElementsByTagName('p')[0].textContent
 
     
     metertofeetString = val + ' meters =' + (val * 3.281).toFixed(2) + ' feet  ';
@@ -27,4 +25,3 @@ const val = document.getElementsByTagName('p')[0].innerText
     lbtokilo = val + ' pounds = ' + (val / 2.205).toFixed(2) + ' kilo'
     document.getElementsByTagName('p')[5].textContent  = kilotolb
     document.getElementsByTagName('p')[6].textContent  = lbtokilo
-}
